@@ -8,6 +8,7 @@
 body{
     font-size: 15px;
     font-family: "Roboto Slab";
+    background-color: white;
 }
 
 header#header {
@@ -41,13 +42,73 @@ header#header {
 main#home {
 
     section#trabajos{
-        min-height: 100vh;
+        min-height: 60vh;
         align-content: center;
         text-align: center;
+        color: var(--negro);
 
         img{
             width: 100%;
         }
+
+        h3::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 5px;
+            margin: 10px auto;
+            background-color: red;
+        }
     }
 }
+
+/* crear linea bajo el h3 vacio */
+
+    section#soporte{
+        min-height: 60vh;
+        align-content: center;
+        text-align: center;
+        color: var(--negro);
+
+        h3{
+            padding: 25px;
+        }
+
+        img{
+            width: 10%;
+        }
+
+        h3::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 5px;
+            margin:10px auto;
+            background-color: var(--turquesa);
+        }
+
+        .row+.row{
+            
+            div{
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                text-align: start;
+
+                img{
+                    margin-right: 20px;
+                }
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+
+                }
+            }
+
+        }
+    }
+
+
+
 
