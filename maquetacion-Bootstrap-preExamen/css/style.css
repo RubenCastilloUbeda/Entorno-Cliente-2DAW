@@ -1,28 +1,49 @@
-:root{
+﻿:root{
     --blanco: white;
-    --negro: black;
-    --gris: rgb(146, 145, 145);
-    --turquesa: rgb(36, 166, 153);
+    --negro: #444444;
+    --gris: #b5b5b5;
+    --turquesa: #39c8b4;
+    --rosa: #ff7380;
 }
 
 body{
-    font-size: 15px;
-    font-family: "Roboto Slab";
-    background-color: white;
+    margin: 0;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: var(--gris);
+    background-color: var(--blanco);
 }
 
-header#header {
-    min-height: 100vh;
-    background:var(--turquesa) url("../img/cabecera.png") no-repeat center 100%;
+.container{
+    max-width: 1240px;
+}
 
-    nav.navbar{
-        background-color: transparent;
+header#header{
+    min-height: 960px;
+    padding-top: 40px;
+    color: var(--blanco);
+    background: var(--turquesa) url("../img/cabecera.png") no-repeat center bottom;
+
+    .row{
+        align-items: center;
+    }
+
+    .logo{
+        width: 146px;
+        height: auto;
+    }
+
+    nav{
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
     }
 
     nav a{
-        color: white;
+        color: var(--blanco);
         font-weight: bold;
         text-transform: uppercase;
+        text-decoration: none;
     }
 
     .container+ .container{
@@ -36,79 +57,183 @@ header#header {
     h1{
         font-size: 5rem;
         font-weight: 100;
+        text-transform: uppercase;
+        line-height: 1.1;
+        margin-bottom: 15px;
+    }
+
+    p{
+        font-size: 60px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    @media (max-width: 767px){
+        min-height: 750px;
+        background-size: 400px auto;
+
+        nav{
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        nav a{
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        .portada{
+            padding-top: 150px;
+        }
+
+        h1{
+            font-size: 65px;
+        }
+
+        p{
+            font-size: 35px;
+        }
     }
 }
 
-main#home {
+main#home{
+    h3{
+        color: var(--negro);
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    h3::after{
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        margin: 20px auto 60px;
+        background-color: var(--turquesa);
+    }
+
+    .presentacion{
+        text-align: center;
+
+        p{
+            margin-bottom: 20px;
+        }
+    }
 
     section#trabajos{
-        min-height: 60vh;
-        align-content: center;
+        padding-top: 165px;
+        padding-bottom: 90px;
+
+        h3::after{
+            background-color: var(--rosa);
+            margin: 35px auto 40px;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
+    section#soporte{
+        padding-top: 90px;
+        padding-bottom: 60px;
+
+        .servicios{
+            margin-top: 80px;
+
+            div{
+                display: flex;
+                align-items: start;
+                padding: 0 25px;
+                margin-bottom: 65px;
+            }
+
+            img{
+                width: 30px;
+                height: auto;
+                margin-right: 30px;
+                margin-top: 5px;
+            }
+
+            h4{
+                color: var(--negro);
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+            }
+
+            p{
+                font-size: 15px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    section#equipo{
+        padding-top: 100px;
+        padding-bottom: 200px;
         text-align: center;
-        color: var(--negro);
+
+        .personas{
+            margin-top: 60px;
+        }
 
         img{
             width: 100%;
         }
 
-        h3::after {
-            content: "";
-            display: block;
-            width: 100px;
-            height: 5px;
-            margin: 10px auto;
-            background-color: red;
+        h4{
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: var(--negro);
+        }
+
+        .personas p{
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 767px){
+        section#trabajos, section#soporte, section#equipo{
+            padding: 70px 20px;
+        }
+
+        section#trabajos img{
+            margin-bottom: 25px;
+        }
+
+        section#soporte .servicios > div{
+            margin-bottom: 40px;
+        }
+
+        section#equipo .personas > div{
+            margin-bottom: 35px;
         }
     }
 }
 
-/* crear linea bajo el h3 vacio */
+footer#contacto{
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--turquesa);
+    color: var(--blanco);
 
-    section#soporte{
-        min-height: 60vh;
-        align-content: center;
-        text-align: center;
-        color: var(--negro);
-
-        h3{
-            padding: 25px;
-        }
-
-        img{
-            width: 10%;
-        }
-
-        h3::after {
-            content: "";
-            display: block;
-            width: 100px;
-            height: 5px;
-            margin:10px auto;
-            background-color: var(--turquesa);
-        }
-
-        .row+.row{
-            
-            div{
-                display: flex;
-                align-items: start;
-                justify-content: start;
-                text-align: start;
-
-                img{
-                    margin-right: 20px;
-                }
-
-                div{
-                    display: flex;
-                    flex-direction: column;
-
-                }
-            }
-
-        }
+    p{
+        margin: 0;
+        font-size: 25px;
     }
 
-
-
-
+    @media (max-width: 767px){
+        p{
+            font-size: 18px;
+        }
+    }
+}
