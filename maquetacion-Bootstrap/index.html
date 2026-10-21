@@ -1,54 +1,126 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REEN</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous" />
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar sm:navbar-expand bg-1 fg-2">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
-                </button>
-                <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
-                    <div class="drawer-header">
-                        <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
-                    </div>
-                    <div class="drawer-body">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
-                    </div>
-                </dialog>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 sm:col-4">
+                    <a href="#home"><img src="img/logo.png" alt="REEN" class="logo"></a>
+                </div>
+                <nav class="col-12 md:col-8">
+                    <a class="activo" href="#home">Home</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#clientes">Clientes</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
-    <main></main>
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
-        crossorigin="anonymous"></script>
+    <main id="home">
+        <section id="portada">
+            <div class="container">
+                <div class="row">
+                    <div class="md:col-10 mx-auto">
+                        <h1>Lorem ipsum dolor</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <a class="boton" href="#portfolio">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clientes">
+            <div class="container">
+                <div class="row">
+                    <div class="presentacion md:col-9 mx-auto">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                </div>
+                <div class="servicios row">
+                    <div class="md:col-4">
+                        <div>
+                            <img src="img/icon1.png" alt="Movil con un corazon">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi</p>
+                    </div>
+                    <div class="md:col-4">
+                        <div>
+                            <img src="img/icon2.png" alt="Ficha de cliente">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi</p>
+                    </div>
+                    <div class="md:col-4">
+                        <div>
+                            <img src="img/icon3.png" alt="Ordenador">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <div class="row">
+                    <div class="trabajo md:col-6">
+                        <img src="img/foto1.jpg" alt="Cohete entre las nubes">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
+                        <p>lorem ipsum</p>
+                    </div>
+                    <div class="trabajo md:col-6">
+                        <img src="img/foto2.jpg" alt="Figuras de colores">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="https://www.instagram.com/">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/instagram.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/twitter.svg" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/facebook.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
