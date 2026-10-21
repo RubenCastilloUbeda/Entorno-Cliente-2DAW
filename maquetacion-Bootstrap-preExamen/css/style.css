@@ -1,0 +1,53 @@
+:root{
+    --blanco: white;
+    --negro: black;
+    --gris: rgb(146, 145, 145);
+    --turquesa: rgb(36, 166, 153);
+}
+
+body{
+    font-size: 15px;
+    font-family: "Roboto Slab";
+}
+
+header#header {
+    min-height: 100vh;
+    background:var(--turquesa) url("../img/cabecera.png") no-repeat center 100%;
+
+    nav.navbar{
+        background-color: transparent;
+    }
+
+    nav a{
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .container+ .container{
+        /* centrar un contenido sin display: flex, text align + align-content */
+        text-align: center;
+        align-content: center;
+        min-height: 80vh;
+        color: var(--blanco);
+    }
+
+    h1{
+        font-size: 5rem;
+        font-weight: 100;
+    }
+}
+
+main#home {
+
+    section#trabajos{
+        min-height: 100vh;
+        align-content: center;
+        text-align: center;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
