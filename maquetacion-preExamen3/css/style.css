@@ -1,0 +1,28 @@
+:root{
+    --salmon: hsl(7, 99%, 70%);
+    --amarillo: hsl(51, 100%, 49%);
+    --cyanOscuro:  hsl(167, 40%, 24%);
+    --azulOscuro: hsl(198, 62%, 26%);
+    --cianOscuro: hsl(168, 34%, 41%);
+    --azulDesaturado: hsl(212, 27%, 19%);
+    --azulGrisaceoOscuro: hsl(213, 9%, 39%);
+    --azulGrisaceoSuave: hsl(232, 10%, 55%);
+    --azulGrisáceo: hsl(210, 4%, 67%);
+    --blanco: hsl(0, 0%, 100%);
+}
+
+html,body{
+    background-color: white;
+}
+
+h1,h2,h3,h4{
+    font-size: 18px;
+    font-family: "Barlow", serif;
+    font-weight: 600;
+}
+
+p{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
