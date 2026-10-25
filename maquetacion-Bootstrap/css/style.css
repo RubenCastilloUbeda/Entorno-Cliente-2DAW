@@ -34,6 +34,20 @@ header#header{
         display: flex;
         justify-content: end;
         flex-wrap: wrap;
+        min-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: transparent;
+    }
+
+    .navbar-toggler{
+        display: none;
+    }
+
+    .enlaces{
+        display: flex;
+        justify-content: end;
+        width: 100%;
     }
 
     .logo{
@@ -58,12 +72,33 @@ header#header{
         color: var(--morado);
     }
     @media (max-width: 767px){
-        .logo{
-            margin-bottom: 15px;
+        .navbar-toggler{
+            display: inline-flex;
+            background-color: var(--morado);
+            color: var(--blanco);
+            border: 1px solid var(--morado);
+        }
+
+        #menu{
+            background-color: var(--blanco);
+            color: var(--negro);
+        }
+
+        #menu a{
+            color: var(--negro);
+        }
+
+        .enlaces{
+            flex-direction: column;
+            align-items: start;
         }
 
         nav a{
-            padding: 0 10px;
+            padding: 12px 10px;
+        }
+
+        nav a + a{
+            border-left: 0;
         }
     }
 }
