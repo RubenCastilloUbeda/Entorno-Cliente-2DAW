@@ -1,7 +1,7 @@
-:root{
+:root {
     --salmon: hsl(7, 99%, 70%);
     --amarillo: hsl(51, 100%, 49%);
-    --cyanOscuro:  hsl(167, 40%, 24%);
+    --cyanOscuro: hsl(167, 40%, 24%);
     --azulOscuro: hsl(198, 62%, 26%);
     --cianOscuro: hsl(168, 34%, 41%);
     --azulDesaturado: hsl(212, 27%, 19%);
@@ -11,32 +11,103 @@
     --blanco: hsl(0, 0%, 100%);
 }
 
-html,body{
+html,body {
     background-color: white;
 }
 
-h1,h2,h3,h4{
+h1,h2,h3,h4 {
     font-size: 18px;
     font-family: "Barlow", serif;
     font-weight: 600;
 }
 
-p{
+a{
+    text-decoration: none;
+}
+
+p {
     font-family: "Fraunces", serif;
     font-weight: 700;
 }
 
-header{
-    background-image: url(../images/desktop/image-header.jpg);
-    
+header {
+    background: url(../images/desktop/image-header.jpg) no-repeat center center;
+    min-height: 100vh;
+    width: 100vw;
+
+    nav+div {
+        text-align: center;
+        align-content: center;
+
+        h1 {
+            font-size: 5rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .navbar {
+        background: transparent;
+
+        a {
+            color: var(--blanco);
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
 }
 
-section#imagenes{
-    img{
+section#imagenes {
+    img {
         width: 100%;
     }
 }
 
-footer{
+footer {
     text-align: center;
+}
+
+#info {
+    min-height: 500px;
+}
+
+/* Principal */
+
+main {
+
+    #principal{
+        img{
+            width: 100%;
+        }
+
+        .row > div{
+            min-height: 400px;
+            align-content: center;
+        }
+
+        h2,p,a{
+            color: var(--azulGrisaceoOscuro);
+        }
+
+        .naranja{
+            min-height: 400px;
+            background: url(../images/desktop/image-photography\ \(1\).jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        .cereza {
+            min-height: 400px;
+            background: url(../images/desktop/image-graphic-design\ \(1\).jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        .info {
+            h2{
+                font-size: 30px;
+
+            }
+            padding: 75px;
+        }
+    }
+
+
 }
