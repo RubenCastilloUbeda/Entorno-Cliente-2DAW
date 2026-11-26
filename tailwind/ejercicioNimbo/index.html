@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimbo</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body">
+    <header id="header" class="flex justify-between items-center px-14 py-4">
+        <!-- Logo -->
+        <a><img src="assets-png/logo-modo-claro.png" alt="" class="w-36"></a>
+        <!-- Nav -->
+        <nav class="space-x-4 text-gray-500">
+            <a href="#" class="inline-block hover:scale-110">Funciones</a>
+            <a href="#" class="inline-block hover:scale-110">Precios</a>
+            <a href="#" class="inline-block hover:scale-110">Empezar</a>
+            <a href="#" class="inline-block text-white bg-violet-700 px-4 py-1 rounded-full hover:scale-110">Prueba
+                gratis</a>
+        </nav>
+        <button class="border-[1px] border-gray-200 rounded-full p-2">
+            <img src="assets-png/icono-luna.png" alt="" class="w-8 border border-gray-200 rounded-full p-1">
+            <img src="assets-png/icono-sol.png" alt="" class="w-8 border border-gray-200 rounded-full p-1 hidden">
+        </button>
+    </header>
+    <main>
+        <!-- Sección hero -->
+        <section
+            class="bg-violet-50 grid grid-cols-1 md:grid-cols-2 min-h-[70vh] p-18 gap-20 items-center justify-center">
+            <div class="space-y-8">
+                <h1 class="font-bold text-8xl">Tu equipo, por fin en la misma página</h1>
+                <p class="text-gray-400">Nimbo reune tareas, fechas y responsables en tableros claros. Menos runiones,
+                    más trabajo hecho.</p>
+                <a href="" class="text-white bg-violet-700 rounded-md px-5 py-2 me-4">Empeiza gratis</a>
+                <a href="" class="text-blue-700 rounded-md px-6 py-2 border-2">Ver funciones</a>
+            </div>
+            <div>
+                <img src="assets-png/hero-modo-claro.png" alt="" class="rounded-2xl">
+            </div>
+        </section>
+
+
+        <!-- Todo lo que tu equipo necesita -->
+        <section class="p-18">
+            <h2 class="text-3xl font-bold text-black">Todo lo que tu equipo necesita</h2>
+            <p class="mb-14 mt-4">Seis herramientas pensadas para que nadie pregunte «¿quién se encarga de esto?»</p>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="tarjeta-herramientas">
+                    <img src="assets-png/icono-tableros.png" alt="">
+                    <h4>Tableros</h4>
+                    <p>Arrastra tareas entre «Por hacer», «En curso» y «Hecho».</p>
+                </div>
+                <div class="tarjeta-herramientas">
+                    <img src="assets-png/icono-tareas.png" alt="">
+                    <h4>Fechas limites</h4>
+                    <p>Cada tarea tiene su fecha y se ordena sola en el calendario.</p>
+                </div>
+                <div class="tarjeta-herramientas">
+                    <img src="assets-png/icono-equipos.png" alt="">
+                    <h4>Equipos</h4>
+                    <p>signa responsables y comparte tableros con quien quieras.</p>
+                </div>
+                <div class="tarjeta-herramientas">
+                    <img src="assets-png/icono-avisos.png" alt="">
+                    <h4>Avisos</h4>
+                    <p>Recibe un aviso solo cuando algo te toca a ti.</p>
+
+
+                </div>
+                <div class="tarjeta-herramientas">
+                    <img src="assets-png/icono-automatizar.png" alt="">
+                    <h4>Automatizaciones</h4>
+                    <p>Mueve tareas y avisa al equipo sin hacer nada a mano.</p>
+
+
+                </div>
+                <div class="tarjeta-herramientas">
+                    <img src="assets-png/icono-informes.png" alt="">
+                    <h4>Informes</h4>
+                    <p>Mira cuánto se ha hecho esta semana y qué se retrasa.</p>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Planes -->
+        <section class="bg-violet-50 min-h-[40vh] text-center p-18">
+            <h2 class="text-4xl font-bold">Un plan para cada equipo</h2>
+            <p class="text-gray-500 mt-4">Empieza gratis y cambia de plan cuando lo necesites</p>
+            <div class="grid grid-cols-3 text-start">
+                <div class="tarjeta-plan-clara">
+                    <h4>Gratis</h4>
+                    <span>0 €</span>
+                    <p>Para probar Nimbo</p>
+                    <ul>
+                        <li><span>✓</span>3 tableros</li>
+                        <li><span>✓</span>Hasta 5 personas</li>
+                        <li><span>✓</span>Avisos por correo</li>
+                    </ul>
+                    <a href=""
+                        class="inline-block w-full text-center text-violet-700 rounded-md px-6 py-2 border-2">Elegir
+                        Gratis</a>
+                </div>
+                <div class="tarjeta-plan-clara">
+                    <p>El más elegido</p>
+                    <h4>Equipo</h4>
+                    <span>8 €</span>
+                    <p>Parta organizaciones grandes</p>
+                    <ul>
+                        <li><span>✓</span>Todo lo de Equipo</li>
+                        <li><span>✓</span>Permisos avanzados</li>
+                        <li><span>✓</span>Soporte prioritario</li>
+                    </ul>
+                    <a href=""
+                        class="inline-block w-full text-center text-violet-700 rounded-md px-6 py-2 border-2">Elegir
+                        Gratis</a>
+                </div>
+                <div class="tarjeta-plan-clara">
+                    <h4>Empresa</h4>
+                    <span>20 €</span>
+                    <p>Parta organizaciones grandes</p>
+                    <ul>
+                        <li><span>✓</span>Todo lo de Equipo</li>
+                        <li><span>✓</span>Permisos avanzados</li>
+                        <li><span>✓</span>Soporte prioritario</li>
+                    </ul>
+                    <a href=""
+                        class="inline-block w-full text-center text-violet-700 rounded-md px-6 py-2 border-2">Elegir
+                        Gratis</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    </body>
+    <script>
+        const luna=document.querySelector('button img:first-child');
+        const sol=document.querySelector('button img:last-child');
+        const boton=document.querySelector('button')
+        boton.addEventListener('click', ()=>{
+            document.documentElement.classList.toggle('dark');
+            luna.classList.add('hidden')
+            sol.classList.remove('hidden')
+        })
+    </script>
+
+</html>
